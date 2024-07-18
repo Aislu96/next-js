@@ -3,7 +3,7 @@ export default function Home() {
         <main className="container flex flex-col gap-24">
             <section className="options">
                 <div className="flex flex-col gap-24 w-full">
-                    <h1 className="font-medium text-50px leading-59.25px text-left">ОПЦИИ СЕРВИСА</h1>
+                    <h2 className="font-medium text-50px leading-59.25px text-left">ОПЦИИ СЕРВИСА</h2>
                     <div className="flex flex-row gap-7">
                         <div className="flex flex-col gap-7 flex-1">
                             <div className="flex flex-row gap-7 min-w-80">
@@ -43,7 +43,7 @@ export default function Home() {
             </section>
             <section className="services">
                 <div className="flex flex-col gap-24 w-full">
-                    <h1 className="font-medium text-50px leading-59.25px text-left">ОПЦИИ СЕРВИСА</h1>
+                    <h2 className="font-medium text-50px leading-59.25px text-left">ОПЦИИ СЕРВИСА</h2>
                     <div className="flex flex-row flex-wrap gap-5">
                         <div className="flex flex-col gap-4 bg-gray-100 h-[328px] w-[328px] p-10 rounded-[50px] shadow-custom">
                             <img className="mx-14" src="/services/consulting.svg" alt="tax consulting"/>
@@ -62,7 +62,16 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
+            <section className="new-users">
+                <div className="flex flex-col gap-24 w-full align-center">
+                    <div className="px-11 py-6 flex flex-row gap-9 align-center shadow-customTwo">
+                        <div className="pr-9 border-r-4 border-r-customBlue">
+                            <img src="/new-users/users.svg" alt="users"/>
+                        </div>
+                        <h2 className="font-medium text-50px leading-59.25px">ВЫ НОВЫЙ ПОЛЬЗОВАТЕЛЬ?</h2>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }

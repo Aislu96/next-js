@@ -44,9 +44,11 @@ module.exports = {
             },
             boxShadow: {
                 custom: '3px 4px 5.8px 0px rgba(0, 0, 0, 0.25)',
+                customTwo: '4px 2px 8.9px 1px rgba(0, 0, 0, 0.25)'
             },
             colors: {
                 customGray: '#737373',
+                customBlue: '#2D95E4',
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
