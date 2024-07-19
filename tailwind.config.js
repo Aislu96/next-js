@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {Plugin} */
+const plugin = require('tailwindcss/plugin');
 module.exports = {
     darkMode: ["class"],
     content: [
@@ -17,6 +18,9 @@ module.exports = {
             },
         },
         extend: {
+            backgroundImage: {
+                'custom-gradient': 'linear-gradient(107.07deg, #07B0F3 0.56%, #C1EEFF 132.85%)',
+            },
             fontFamily: {
                 rubik: ['Rubik', 'sans-serif'],
             },
@@ -29,6 +33,7 @@ module.exports = {
                 '59.25': '59.25px',
                 '27.26px': '27.26px',
                 '33.18px': '33.18px',
+                '88.25px':'88.25px',
             },
             fontWeight: {
                 '300': '300',
@@ -47,8 +52,11 @@ module.exports = {
                 customTwo: '4px 2px 8.9px 1px rgba(0, 0, 0, 0.25)'
             },
             colors: {
-                customGray: '#737373',
-                customBlue: '#2D95E4',
+                customGrey: "#F0F0F0",
+                customGreyTwo: "#909090",
+                customGreen: "#0AA931",
+                customBlue: "#2D95E4",
+                customBorderGrey:"#909090",
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
@@ -104,5 +112,13 @@ module.exports = {
             },
         },
     },
-    plugins: [require("tailwindcss-animate")],
+    plugins: [
+        plugin(function({ addUtilities }) {
+            addUtilities({
+                '.bg-custom-gradient': {
+                    'background-image': 'linear-gradient(107.07deg, #07B0F3 0.56%, #C1EEFF 132.85%)',
+                }
+            });
+        })
+    ]
 }
