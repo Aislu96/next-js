@@ -52,12 +52,32 @@
       <recent name="C:\Users\arsla\WebstormProjects\next-js\public\services" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.serve">
+  <component name="RunManager" selected="npm.json-server">
+    <configuration name="build-api" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-api" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="json-server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="json-server" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -75,8 +95,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.json-server" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build-api" />
+        <item itemvalue="npm.serve" />
       </list>
     </recent_temporary>
   </component>
@@ -94,7 +116,7 @@
       <workItem from="1721631581850" duration="314000" />
       <workItem from="1722865164105" duration="2959000" />
       <workItem from="1722928358298" duration="11391000" />
-      <workItem from="1723014670411" duration="7986000" />
+      <workItem from="1723014670411" duration="10695000" />
     </task>
     <servers />
   </component>
