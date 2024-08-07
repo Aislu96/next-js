@@ -16,6 +16,13 @@
 }
 .burgerCard h3 {
     margin-top: 0;
+    font-size: 16px;
+}
+
+.burgerCard p {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 400;
 }
 .singleBurger {
     max-width: 600px;
